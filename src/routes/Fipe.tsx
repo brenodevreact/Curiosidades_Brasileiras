@@ -1,5 +1,11 @@
+import HeaderFipe from "../components/Headers/Fipe";
+
 const Fipe = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeaderFipe />
+    </>
+  );
 };
 
 export default Fipe;
