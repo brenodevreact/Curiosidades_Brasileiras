@@ -20,9 +20,24 @@ export const StyledDivHome = styled.div`
         }
         h1{
             font-size: var(--title1);
+            
         }
         p {
             font-size: var(--text2);
         }
+
+        span {
+            margin-right: 10px;
+        }
     }
+`
+
+export const ColorBlue = styled.span`
+    color: var(--blue)
+`
+export const ColorYellow = styled.span`
+    color: var(--yellow)
+`
+export const ColorGreen = styled.span`
+    color: var(--green)
 `

@@ -1,12 +1,16 @@
 import brasil from "../../../assets/brasil.png";
-import { StyledDivHome } from "./style";
+import { ColorBlue, ColorGreen, ColorYellow, StyledDivHome } from "./style";
 
 const MainHome = () => {
   return (
     <StyledDivHome>
       <div>
         <h2>Descubra mais</h2>
-        <h1>Sobre o Brasil</h1>
+        <h1>
+          <ColorBlue>Sobre</ColorBlue>
+          <ColorYellow>o</ColorYellow>
+          <ColorGreen>Brasil</ColorGreen>
+        </h1>
         <h2>Aqui nesse site</h2>
 
         <p>
