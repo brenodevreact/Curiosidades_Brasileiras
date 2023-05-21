@@ -1,5 +1,11 @@
+import HeaderDdd from "../components/Headers/Ddd";
+
 const Ddd = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeaderDdd />
+    </>
+  );
 };
 
 export default Ddd;
