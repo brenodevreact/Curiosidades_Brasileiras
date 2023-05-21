@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavFeriados } from "./style.js";
+import { NavFeriados } from "./style.ts";
 
 const HeaderFeriados = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavCnpj } from "./style.js";
+import { NavCnpj } from "./style.ts";
 
 const HeaderCnpj = () => {
   return (

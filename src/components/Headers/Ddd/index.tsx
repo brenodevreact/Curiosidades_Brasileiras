@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavDdd } from "./style.js";
+import { NavDdd } from "./style.ts";
 
 const HeaderDdd = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavCep } from "./style.js";
+import { NavCep } from "./style.ts";
 
 const HeaderCep = () => {
   return (

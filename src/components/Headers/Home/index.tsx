@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavHome } from "./style.js";
+import { NavHome } from "./style.ts";
 
 const HeaderHome = () => {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { NavFipe } from "./style.js";
+import { NavFipe } from "./style.ts";
 
 const HeaderFipe = () => {
   return (
