@@ -1,5 +1,11 @@
+import HeaderCnpj from "../components/Headers/Cnpj";
+
 const Cnpj = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeaderCnpj />
+    </>
+  );
 };
 
 export default Cnpj;
