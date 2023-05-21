@@ -5,7 +5,7 @@ export const NavFeriados = styled.header`
   width: 100%;
   height: 78px;
   justify-content: center;
-
+  position: fixed;
   box-shadow: 0px 1px 0px 0px #00FA19;
 
   nav {
