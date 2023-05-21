@@ -1,5 +1,11 @@
+import HeaderCep from "../components/Headers/Cep";
+
 const Cep = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeaderCep />
+    </>
+  );
 };
 
 export default Cep;
