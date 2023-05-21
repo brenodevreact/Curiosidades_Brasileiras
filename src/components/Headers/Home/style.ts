@@ -1,0 +1,19 @@
+import { styled } from "styled-components";
+
+export const NavHome = styled.header`
+  display: flex;
+  width: 100%;
+  height: 78px;
+  justify-content: center;
+
+  box-shadow: 0px 1px 0px 0px #00FA19;
+
+  nav {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 71px;
+  }
+`;

@@ -10,3 +10,17 @@
     background-color: #f9f9f9;
   }
 }
+
+:root {
+  --green: #00fa19;
+  --blue: #002776;
+  --yellow: #ffdf00;
+
+  --title1: 64px;
+  --title2: 36px;
+  --title3: 32px;
+
+  --text1: 24px;
+  --text2: 16px;
+  --text3: 14px;
+}
