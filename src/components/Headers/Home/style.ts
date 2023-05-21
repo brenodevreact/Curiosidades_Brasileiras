@@ -16,4 +16,15 @@ export const NavHome = styled.header`
     justify-content: center;
     gap: 71px;
   }
+
+  a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--text2);
+    font-weight: bold;
+
+    &:visited {
+      color: var(--black);
+    }
+  }
 `;
