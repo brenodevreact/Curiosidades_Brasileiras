@@ -29,6 +29,19 @@ export const StyledDivHome = styled.div`
         span {
             margin-right: 10px;
         }
+
+        button {
+            width: 192px;
+            height: 62px;
+            border-radius: 10px;
+
+            background: linear-gradient(to left, var(--green), var(--yellow));
+            
+            font-size: var(--text1);
+            font-weight: bold;
+            color: var(--blue);
+                
+        }
     }
 `
 

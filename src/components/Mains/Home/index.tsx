@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import brasil from "../../../assets/brasil.png";
 import { ColorBlue, ColorGreen, ColorYellow, StyledDivHome } from "./style";
 
@@ -19,6 +20,9 @@ const MainHome = () => {
           munícipios de algum DDD, ver os Feriados Nacionais de um ano
           específico e ainda verificar o clima da sua região!{" "}
         </p>
+        <Link to={"/consultacep"}>
+          <button>COMEÇAR</button>
+        </Link>
       </div>
 
       <img src={brasil} alt="Bandeira do Brasil" />
