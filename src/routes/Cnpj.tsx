@@ -1,5 +1,3 @@
-import React from "react";
-
 const Cnpj = () => {
   return <div></div>;
 };
