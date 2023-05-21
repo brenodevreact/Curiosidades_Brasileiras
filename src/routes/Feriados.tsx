@@ -1,5 +1,11 @@
+import HeaderFeriados from "../components/Headers/Feriados";
+
 const Feriados = () => {
-  return <div></div>;
+  return (
+    <>
+      <HeaderFeriados />
+    </>
+  );
 };
 
 export default Feriados;
