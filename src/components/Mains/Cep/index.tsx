@@ -1,18 +1,38 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { StyledDivCep } from "./style";
 import send from "../../../assets/send.png";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 type Inputs = {
   cep: string;
+  replace: any;
 };
 
 const MainCep = () => {
+  const [cep, setCep] = useState("");
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    setCep(data.cep);
+  };
+
+  useEffect(() => {
+    const responseCep = axios
+      .get(`https://brasilapi.com.br/api/cep/v1/${cep}`)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+
+    console.log(cep);
+  }, [cep]);
 
   return (
     <StyledDivCep>
@@ -28,9 +48,9 @@ const MainCep = () => {
         </button>
       </form>
 
-      <div>
+      {/* <div>
         <h4>Dados</h4>
-      </div>
+      </div> */}
     </StyledDivCep>
   );
 };
