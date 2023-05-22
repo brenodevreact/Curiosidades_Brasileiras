@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { StyledDivCep } from "./style";
+import send from "../../../assets/send.png";
 
 type Inputs = {
   cep: string;
@@ -22,8 +23,14 @@ const MainCep = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <input placeholder="Cep desejado..." {...register("cep")} />
         {errors.cep && <span>Esse campo é necessário...</span>}
-        <input type="submit" />
+        <button type="submit">
+          <img src={send} alt="Enviar" />
+        </button>
       </form>
+
+      <div>
+        <h4>Dados</h4>
+      </div>
     </StyledDivCep>
   );
 };
