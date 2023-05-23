@@ -8,7 +8,6 @@ import Cep from "./routes/Cep.tsx";
 import Ddd from "./routes/Ddd.tsx";
 import Cnpj from "./routes/Cnpj.tsx";
 import Feriados from "./routes/Feriados.tsx";
-import Fipe from "./routes/Fipe.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,10 +33,6 @@ const router = createBrowserRouter([
       {
         path: "/feriados",
         element: <Feriados />,
-      },
-      {
-        path: "/fipe",
-        element: <Fipe />,
       },
     ],
   },
