@@ -6,6 +6,9 @@ import { LottieDiv, ResponseDiv } from "./style";
 import Lottie from "lottie-react";
 import search from "../../../assets/search.json";
 import lixo from "../../../assets/lixo.png";
+import { StyledDivCep } from "../Cep/style";
+import { format } from "date-fns";
+import { toast, ToastContainer } from "react-toastify";
 
 type DataAno = {
   date: string;
@@ -41,14 +44,22 @@ const MainFeriado = () => {
       .get(`https://brasilapi.com.br/api/feriados/v1/${ano}`)
       .then((response) => {
         setResponseAno(response.data);
+        toast.success("Ano encontrado.");
       })
       .catch((error) => {
         console.error(error);
+        if (
+          error.response.data.message ==
+          "Ano fora do intervalo suportado entre 1900 e 2199."
+        ) {
+          toast.error("Ano fora do intervalo suportado entre 1900 e 2199.");
+        }
       });
   }, [ano]);
 
   return (
-    <>
+    <StyledDivCep>
+      <ToastContainer autoClose={2000} />
       <h2>Feriados Nacionais</h2>
       <h3>Digite o ano que você quer ver os feriados</h3>
 
@@ -65,7 +76,7 @@ const MainFeriado = () => {
         </button>
       </form>
 
-      {responseAno == null ? (
+      {responseAno[0] == undefined ? (
         <LottieDiv>
           <Lottie animationData={search} />
         </LottieDiv>
@@ -76,7 +87,8 @@ const MainFeriado = () => {
           <ul>
             {responseAno.map((elem) => (
               <li key={elem.date}>
-                Data: {elem.date} Nome: {elem.name}
+                Data: {format(new Date(elem.date), "dd/MM/yyyy")} - Nome:{" "}
+                {elem.name}
               </li>
             ))}
           </ul>
@@ -84,7 +96,7 @@ const MainFeriado = () => {
           <img src={lixo} alt="Lixeira" onClick={handleClick} />
         </ResponseDiv>
       )}
-    </>
+    </StyledDivCep>
   );
 };
 
