@@ -18,9 +18,6 @@ const HeaderCnpj = () => {
           <p>
             <Link to={"/consultaddd"}>Descobrir DDD</Link>
           </p>
-          <p>
-            <Link to={"/fipe"}>Tabela FiPE</Link>
-          </p>
         </nav>
       </NavCnpj>
     </>

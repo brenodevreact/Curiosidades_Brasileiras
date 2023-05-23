@@ -18,9 +18,6 @@ const HeaderHome = () => {
           <p>
             <Link to={"/consultacnpj"}>Consultar CNPJ</Link>
           </p>
-          <p>
-            <Link to={"/fipe"}>Tabela FiPE</Link>
-          </p>
         </nav>
       </NavHome>
     </>
